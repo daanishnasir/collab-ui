@@ -14,8 +14,7 @@ import { Component } from '@angular/core';
         *ngFor="let navItem of navItems"
         [title]="navItem.title"
         [icon]="navItem.icon"
-        (navItemClick) = "onClick($event)"
-      >
+        (navItemClick) = "onClick($event)">
       </md-sidebar-nav-item>
     </md-sidebar-nav>
   </md-sidebar-body>

@@ -16,7 +16,9 @@ export type CompositeAvatarType =
   `,
 })
 export class CompositeAvatarComponent {
+  /** @prop Sets an optional css class on the composite avatar | '' */
   @Input() private className: string = '';
+  /** @prop Sets the size of the composite avatar | 'medium */
   @Input() private size: CompositeAvatarType = 'medium';
 
   @HostBinding('class') get _class(): string {

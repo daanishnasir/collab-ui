@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
       ariaLabel="For the Win"
       [disabled]="true"
       iconColor="gray-40"
-      (click)="onClick()"
-    ></md-call-control>
+      (click)="onClick()">
+    </md-call-control>
   `,
 })
 export class ExampleCallControlDisableComponent {

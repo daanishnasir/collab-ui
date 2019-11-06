@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
       type="microphone-muted"
       ariaLabel="For the Win"
       [active]="true"
-      (click)="onClick()"
-    ></md-call-control>
+      (click)="onClick()">
+    </md-call-control>
   `,
 })
 export class ExampleCallControlActiveComponent {

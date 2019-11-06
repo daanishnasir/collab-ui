@@ -34,11 +34,12 @@ export class ActivityButtonComponent implements OnInit {
   @Input() disabled: boolean = false;
   /** @prop Sets the button's size | 68 */
   @Input() size: ActivityButtonSize = 68;
-  /** @prop Sets the button's activity type */
+  /** @prop Sets the button's activity type | ''*/
   @Input() type: ActivityButtonType = '';
-  /** @prop Sets the button's class */
+  /** @prop Sets the button's class | ''*/
   @Input() className: string = '';
 
+  /** @prop Handler to be called when the user clicks the activity button | null */
   @Output() whenClick = new EventEmitter();
 
   public regIntial = /\b\w+\b/g;
@@ -82,5 +83,4 @@ export class ActivityButtonComponent implements OnInit {
   public handleClick = (event) => {
     this.whenClick.emit(event);
   }
-
 }

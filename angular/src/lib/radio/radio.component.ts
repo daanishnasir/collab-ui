@@ -51,24 +51,24 @@ const CUSTOM_RADIO_VALUE_ACCESSOR: any = {
 export class RadioComponent implements ControlValueAccessor {
   constructor(private cdr: ChangeDetectorRef, private elementRef: ElementRef) {}
 
-  /** @option Optional CSS class name on individual radio input | '' */
+  /** @prop Optional CSS class name on individual radio input | '' */
   @Input() className: string = '';
-  /** @option Sets the attribute disabled to the Radio | false */
+  /** @prop Sets the attribute disabled to the Radio | false */
   @Input() disabled: boolean = false;
-  /** @option Help Text to appear under the radio | '' */
+  /** @prop Help Text to appear under the radio | '' */
   @Input() public helpText: string = '';
-  /** @option Unique HTML ID used for tying label to HTML input for automated testing */
+  /** @prop Unique HTML ID used for tying label to HTML input for automated testing */
   @Input() htmlId: string = '';
-  /** @option Radio label text | '' */
+  /** @prop Radio label text | '' */
   @Input() label: string = '';
-  /** @option Radio name for group | '' */
+  /** @prop Radio name for group | '' */
   @Input() name: string = '';
-  /** @option index of the radio in tab order */
+  /** @prop index of the radio in tab order */
   @Input() tabIndex: number;
-  /** @option String value that corresponds with Radio button | '' */
+  /** @prop String value that corresponds with Radio button | '' */
   @Input() value: any = '';
 
-  /** @option Set the level of nested radio | 0 */
+  /** @prop Set the level of nested radio | 0 */
   private _nestedLevel: number;
   @Input()
   set nestedLevel(nestedLevel: number) {
@@ -79,7 +79,7 @@ export class RadioComponent implements ControlValueAccessor {
     this._nestedLevel = nestedLevel;
   }
 
-  /** @option Callback function invoked when user clicks the Radio button | null */
+  /** @prop Callback function invoked when user clicks the Radio button | null */
   @Output() radioClick: EventEmitter<any> = new EventEmitter();
 
   @ViewChild('radioInput') radioViewChild: ElementRef;

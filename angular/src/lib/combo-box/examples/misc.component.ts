@@ -10,8 +10,7 @@ import { Component } from '@angular/core';
       searchProp="name"
       [(ngModel)]="value"
       (select)="onSelect($event)"
-      (change)="onChange($event)"
-    >
+      (change)="onChange($event)">
     </md-combo-box>
   `,
 })

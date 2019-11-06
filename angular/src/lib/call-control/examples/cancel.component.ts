@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
     <md-call-control
       type="cancel"
       ariaLabel="For the Win"
-      (click)="onClick()"
-    ></md-call-control>
+      (click)="onClick()">
+    </md-call-control>
   `,
 })
 export class ExampleCallControlCancelComponent {

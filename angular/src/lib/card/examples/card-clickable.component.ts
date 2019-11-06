@@ -9,15 +9,15 @@ import { Component } from '@angular/core';
             <md-avatar
               title="Barbara"
               size="30"
-              src="http://react.collab-ui.com/barbara.png"
-            ></md-avatar>
+              src="http://react.collab-ui.com/barbara.png">
+            </md-avatar>
             <div class="headline">
-                <h4>Title</h4>
-                <h6>Subtitle</h6>
+              <h4>Title</h4>
+              <h6>Subtitle</h6>
             </div>
         </div>
         <div class="totheRight">
-            <md-icon name="more-adr"></md-icon>
+          <md-icon name="more-adr"></md-icon>
         </div>
       </md-card-section>
       <md-card-section [full]='true'>

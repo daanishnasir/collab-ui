@@ -6,7 +6,6 @@ import { LabelModule } from '../label/label.module';
 import { InputHelperModule } from '../input-helper/input-helper.module';
 
 @NgModule({
-  declarations: [CheckboxComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -14,6 +13,7 @@ import { InputHelperModule } from '../input-helper/input-helper.module';
     LabelModule,
     InputHelperModule,
   ],
+  declarations: [CheckboxComponent],
   exports: [CheckboxComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

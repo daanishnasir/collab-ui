@@ -8,10 +8,11 @@ import { Component, Input} from '@angular/core';
   host: {
     'class': 'md-card-section',
     '[class.md-card-section--full]': 'full',
-
   }
 })
 export class CardSectionComponent {
-  @Input() full: boolean;
+
+  /**@prop Sets the image to the full width of the card | false */
+  @Input() full: boolean = false;
 
  }

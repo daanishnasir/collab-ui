@@ -22,8 +22,8 @@ import { Subject } from 'rxjs';
       [title]="alert.title"
       (mouseclick)="onClick($event)"
       (hide)="onHide($event)"
-      (snooze)="onSnooze($event)"
-    ></md-alert-meeting>
+      (snooze)="onSnooze($event)">
+    </md-alert-meeting>
   `,
   host: {
     'class': 'md-alert__container md-alert__container--bottom-right'

@@ -42,7 +42,6 @@ import { TabsService } from './tabs.service';
 })
 
 export class TabComponent implements OnInit {
-
   /** @prop Optional CSS class name */
   @Input() public className: string = '';
   /** @prop Sets the attribute disabled to the Tab | false */

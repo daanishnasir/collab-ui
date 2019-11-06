@@ -46,9 +46,9 @@ import { ENTER, LEFT_ARROW, RIGHT_ARROW } from '@angular/cdk/keycodes';
 })
 export class PaginationComponent implements OnInit {
 
-  /** @option set the href format | '' */
+  /** @prop set the href format | '' */
   @Input() href: string = '';
-  /** @option set the replace placeholder of href */
+  /** @prop set the replace placeholder of href */
   @Input() hrefReplaceReg: string | RegExp = '$page$';
   /** @props set total | '' */
   @Input() total: number = 10;
@@ -60,7 +60,7 @@ export class PaginationComponent implements OnInit {
   @Input() midGroupNum: number = 3;
   /** @props set the last button group | '' */
   @Input() lastGroupNum: number = 2;
-  /** @option Callback function invoked when user clicks buttons */
+  /** @prop Callback function invoked when user clicks buttons */
   @Output() whenClick = new EventEmitter();
 
   public renderGroupFirst = [];

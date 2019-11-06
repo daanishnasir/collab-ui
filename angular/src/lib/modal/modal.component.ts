@@ -64,7 +64,7 @@ export class ModalComponent implements OnInit, AfterViewInit {
    /** @prop ariaLabel for modal | '' */
    @Input() public ariaLabel: String = '';
 
-   /** @option data array of data for modal | [] */
+   /** @prop data array of data for modal | [] */
    @Input() public data: [];
 
 

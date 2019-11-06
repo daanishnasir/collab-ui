@@ -14,8 +14,6 @@ import { Component } from '@angular/core';
 export class ExampleAlertBannerDefaultComponent {
   show: boolean = false;
 
-  constructor() {}
-
   onClick() {
     this.show = !this.show;
   }

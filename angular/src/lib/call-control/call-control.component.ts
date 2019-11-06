@@ -61,6 +61,7 @@ export class CallControlComponent implements OnInit {
   /** @prop Optional predefined CallControl prop type | null */
   @Input() type: CallControlSize;
 
+  /** @prop emitter when call control is clicked */
   @Output() readonly click: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
   hostClassName: string;

@@ -34,13 +34,13 @@ export class ButtonGroupComponent implements AfterContentInit {
   @Input() activeIndex: number;
   /** @prop Text to display for blindness accessibility features | '' */
   @Input() ariaLabel: string = '';
-  /** @prop Set focus to ButtonGroup when page is loaded | false */
+  /** @prop Sets focus to ButtonGroup when page is loaded | false */
   @Input() focusOnLoad: boolean = false;
   /** @prop Highlights the selected button within group | true */
   @Input() highlightSelected: boolean = true;
   /** @prop Optional text-justified css styling | true */
   @Input() justified: boolean = true;
-  /** @prop Sets width of a pill Button | '60px' */
+  /** @prop Sets width of the pill Button | '60px' */
   @Input() pillWidth: string = '60px';
   /** @prop Optional Button color theme for ButtonGroup | '' */
   @Input()
@@ -63,6 +63,7 @@ export class ButtonGroupComponent implements AfterContentInit {
     this._type = value;
   }
 
+  /** @prop Emitter when clicking on individual button in group */
   @Output() readonly select: EventEmitter<ButtonGroupSelectChange> = new EventEmitter<ButtonGroupSelectChange>();
 
   @ContentChildren(ButtonComponent) buttonList: QueryList<ButtonComponent>;

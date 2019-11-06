@@ -18,7 +18,7 @@ import {
   encapsulation: ViewEncapsulation.None,
 })
 export class LoadingComponent {
-  /** @option Prop to make the Loading animation small | false */
+  /** @prop Prop to make the Loading animation small | false */
   @Input() private small: boolean = false;
 
   @HostBinding('class') get className(): string {

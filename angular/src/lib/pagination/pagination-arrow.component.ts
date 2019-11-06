@@ -24,9 +24,9 @@ import { PaginationService } from './pagination.service';
   }
 })
 export class PaginationArrowComponent implements OnInit {
-  /** @option set isPrevious | '' */
+  /** @prop set isPrevious | '' */
   @Input() isPrevious: boolean = true;
-  /** @option set ifPreventDefault | '' */
+  /** @prop set ifPreventDefault | '' */
   @Input() ifPreventDefault: boolean = false;
 
   public isEnable = false;

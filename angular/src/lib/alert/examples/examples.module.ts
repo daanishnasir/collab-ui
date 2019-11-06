@@ -4,9 +4,10 @@ import { AlertModule, ButtonModule } from '@momentum-ui/angular';
 import {
   ExampleAlertDefaultComponent,
   ExampleAlertSuccessComponent,
+  ExampleAlertErrorComponent,
+  ExampleAlertWarningComponent,
 } from './index';
-import { ExampleAlertWarningComponent } from './warning.component';
-import { ExampleAlertErrorComponent } from './error.component';
+
 
 @NgModule({
   imports: [AlertModule, ButtonModule],

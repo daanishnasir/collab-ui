@@ -25,8 +25,8 @@ import { AlertCallDevice } from './device-list-call.component';
       [devices]="devices"
       [selectedDevice]="defaultSelectedDevice"
       [header]="deviceListHeader"
-      (select)="onDeviceSelect($event)"
-      ></md-device-list-call>
+      (select)="onDeviceSelect($event)">
+    </md-device-list-call>
     <div class="md-alert--call--buttons">
       <button
         *ngIf="answerShareButtonVisible"

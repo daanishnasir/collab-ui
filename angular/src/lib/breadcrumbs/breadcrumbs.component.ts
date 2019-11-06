@@ -1,4 +1,4 @@
-import { Component, AfterContentInit, ViewContainerRef, OnInit } from '@angular/core';
+import { Component, AfterContentInit, ViewContainerRef } from '@angular/core';
 
 @Component({
   selector: 'md-breadcrumbs',
@@ -9,11 +9,9 @@ import { Component, AfterContentInit, ViewContainerRef, OnInit } from '@angular/
     class: 'md-breadcrumbs'
   }
 })
-export class BreadcrumbsComponent implements OnInit, AfterContentInit {
+export class BreadcrumbsComponent implements AfterContentInit {
 
   constructor(private viewContainerRef: ViewContainerRef) { }
-
-  ngOnInit() { }
 
   ngAfterContentInit() {
     const list = this.viewContainerRef.element.nativeElement.getElementsByTagName('LI'),

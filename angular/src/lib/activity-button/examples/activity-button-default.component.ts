@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'example-activity-button-default',
@@ -36,15 +36,9 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class ActivityButtonDefaultComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class ActivityButtonDefaultComponent {
 
   handleClick = (str) => {
     console.info(str);
   }
-
 }

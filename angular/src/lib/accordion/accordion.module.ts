@@ -1,7 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AccordionComponent, AccordionTabComponent } from '../accordion/accordion.component';
-import { AccordionService } from './accordion.service';
 
 
 @NgModule({
@@ -10,7 +9,7 @@ import { AccordionService } from './accordion.service';
   ],
   declarations: [AccordionComponent, AccordionTabComponent],
   exports: [AccordionComponent, AccordionTabComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AccordionModule {
   static forRoot(): ModuleWithProviders {

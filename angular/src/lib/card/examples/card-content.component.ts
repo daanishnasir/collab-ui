@@ -6,18 +6,18 @@ import { Component } from '@angular/core';
     <md-card [ngStyle]="{'width': '300px'}">
       <md-card-section class="header">
         <div class="avatar-title">
-            <md-avatar
-              title="Barbara"
-              size="30"
-              src="http://react.collab-ui.com/barbara.png"
-            ></md-avatar>
-            <div class="headline">
-                <h4>Title</h4>
-                <h6>Subtitle</h6>
-            </div>
+          <md-avatar
+            title="Barbara"
+            size="30"
+            src="http://react.collab-ui.com/barbara.png">
+          </md-avatar>
+          <div class="headline">
+            <h4>Title</h4>
+            <h6>Subtitle</h6>
+          </div>
         </div>
         <div class="totheRight">
-            <md-icon name="more-adr"></md-icon>
+          <md-icon name="more-adr"></md-icon>
         </div>
       </md-card-section>
       <md-card-section [full]='true'>
@@ -29,8 +29,7 @@ import { Component } from '@angular/core';
       <md-card-section>
         <div class="card-footer">
           <a href="" class="footer-link">Link text</a>
-          <button md-button
-            aria-label="myAriaLabel">Button</button>
+          <button md-button aria-label="myAriaLabel">Button</button>
         </div>
       </md-card-section>
     </md-card>

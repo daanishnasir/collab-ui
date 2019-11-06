@@ -11,9 +11,9 @@ import { Component, OnInit, Input, HostBinding } from '@angular/core';
 export class ListItemSectionComponent implements OnInit {
   constructor() {}
 
-  /** @option position Determine the ListItemSection's position | 'center' */
+  /** @prop position Determine the ListItemSection's position | 'center' */
   @Input() position = 'center';
-  /** @option class Optional css class name | '' */
+  /** @prop class Optional css class name | '' */
   @Input() class = '';
 
   @HostBinding('class') get className(): string {

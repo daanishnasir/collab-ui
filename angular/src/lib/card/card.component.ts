@@ -17,9 +17,9 @@ import {SPACE, ENTER} from '@angular/cdk/keycodes';
 })
 
 export class CardComponent {
-  /** catch this event to know the card was clicked on */
+  /** @prop Emitter for when card is clicked */
   @Output() cardClicked: EventEmitter<Boolean> = new EventEmitter();
-  /** @prop clickable whether or not the card is clickable | false */
+  /** @prop Sets the card as clickable | false */
   @Input() clickable: Boolean = false;
 
   onClick(): void {

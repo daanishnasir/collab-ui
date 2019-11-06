@@ -82,7 +82,7 @@ export interface ComboBoxOffset {
           [id]="id"
           [ngStyle]="{width: dropdownWidth + 'px'}"
           role="listbox"
-          >
+        >
           <ng-container *ngFor="let option of filteredOptions; index as i">
             <div
               *ngIf="isObject(option) && !option['isHeader'] || !isObject(option)"
@@ -124,7 +124,7 @@ export class ComboBoxComponent implements OnInit, OnDestroy, ControlValueAccesso
   @Input() id: string;
   /** @prop Array of options for the ComboBox dropdown | [] */
   @Input() options: Array<Object | string> = [];
-  /** @prop Text that initially populates the input field for guidence | ''  */
+  /** @prop Text that initially populates the input field for guidance | ''  */
   @Input() placeholder: string = '';
   /** @prop Sets the search prop | 'label' */
   @Input() searchProp: string = 'label';
@@ -145,6 +145,7 @@ export class ComboBoxComponent implements OnInit, OnDestroy, ControlValueAccesso
     }
   }
 
+  /** @prop emitter to fire when option is clicked */
   @Output() readonly select: EventEmitter<any> = new EventEmitter<any>();
 
   @ViewChild(CdkConnectedOverlay) overlayDir: CdkConnectedOverlay;

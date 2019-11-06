@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
         <h1>Angular Playground</h1>
         <div class="docs-container">
           <!-- Insert Example Here -->
+
+    <example-composite-avatar-default></example-composite-avatar-default>
+
+
         </div>
       </article>
     </div>

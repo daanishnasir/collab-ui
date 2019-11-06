@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
       [options]="options"
       [clear]="true"
       (select)="onSelect($event)"
-      (change)="onChange($event)"
-    >
+      (change)="onChange($event)">
     </md-combo-box>
   `,
 })

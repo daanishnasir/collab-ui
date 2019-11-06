@@ -35,7 +35,7 @@ export class SliderPointerComponent {
   private _previousPosition: number;
   private _document: Document;
 
-  /** @option Set Slider Pointer's position | 0 */
+  /** @prop Set Slider Pointer's position | 0 */
   @Input() position: number = 0;
 
   /** Event emitted when user moves the Slider Pointer */

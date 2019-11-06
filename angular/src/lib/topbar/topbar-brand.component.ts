@@ -17,12 +17,12 @@ import { Component, Input } from '@angular/core';
   },
 })
 export class TopbarBrandComponent {
-  /** @option Image alt text | null */
+  /** @prop Image alt text | null */
   @Input() public alt: string;
-  /** @option Icon class name | 'icon-cisco-logo' */
+  /** @prop Icon class name | 'icon-cisco-logo' */
   @Input() public icon: string = 'icon-cisco-logo';
-  /** @option Image source URL | null */
+  /** @prop Image source URL | null */
   @Input() public image: string;
-  /** @option Topbar title text | '' */
+  /** @prop Topbar title text | '' */
   @Input() public title: string;
 }

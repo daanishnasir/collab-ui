@@ -30,8 +30,8 @@ import { Subject } from 'rxjs';
       (answerVideo)="onAnswerVideo($event)"
       (answerVoice)="onAnswerVoice($event)"
       (deviceSelect)="onDeviceSelect($event)"
-      (reject)="onReject($event)"
-    ></md-alert-call>
+      (reject)="onReject($event)">
+    </md-alert-call>
   `,
   host: {
     'class': 'md-alert__container md-alert__container--call'

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { CoachmarkComponent } from '@momentum-ui/angular';
 
 @Component({
@@ -17,19 +17,12 @@ import { CoachmarkComponent } from '@momentum-ui/angular';
   `,
   styles: ['.mrt{margin:300px 0 0 300px;}']
 })
-export class CoachmarkArrowComponent implements OnInit {
+export class CoachmarkArrowComponent {
 
   @ViewChild('myCoachmark') myCoachmark: CoachmarkComponent;
   @ViewChild('myCoachmark2') myCoachmark2: CoachmarkComponent;
 
-  constructor() { }
-
-  ngOnInit() {
-
-  }
-
   show = (name) => {
     this[name].show();
   }
-
 }

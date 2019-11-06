@@ -21,17 +21,17 @@ import { Component, HostBinding, Input } from '@angular/core';
   },
 })
 export class ListSeparatorComponent {
-  /** @option Background Color of the ListSeparator | null */
+  /** @prop Background Color of the ListSeparator | null */
   @Input() backgroundColor: string;
-  /** @option Color of the ListSeparator line | null */
+  /** @prop Color of the ListSeparator line | null */
   @Input() lineColor: string;
-  /** @option Margin of the ListSeparator | null */
+  /** @prop Margin of the ListSeparator | null */
   @Input() margin: string;
-  /** @option Text of the ListSeparator | null */
+  /** @prop Text of the ListSeparator | null */
   @Input() text: string;
-  /** @option TextColor of the ListSeparator | null */
+  /** @prop TextColor of the ListSeparator | null */
   @Input() textColor: string;
-  /** @option Padding around text of the ListSeparator | null */
+  /** @prop Padding around text of the ListSeparator | null */
   @Input() textPadding: string;
 
   @HostBinding('style.background-color') get _backgroundColor(): string {

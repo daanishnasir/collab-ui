@@ -31,13 +31,13 @@ export type AlertBannerType = 'info' | 'warning' | 'error';
   `,
 })
 export class AlertBannerComponent implements OnInit {
-  /** Sets the visibility of AlertBanner's close button | false */
+  /** @prop Sets the visibility of AlertBanner's close button | false */
   @Input() public closable: boolean = false;
 
   /** Sets the AlertBanner type | 'info' */
   @HostBinding('attr.type') @Input() public type: AlertBannerType = 'info';
 
-  /** Event emitted when the user presses on the AlertBanner's close button or hits the esc key */
+  /** @prop Event emitted when the user presses on the AlertBanner's close button or hits the esc key */
   @Output() hide: EventEmitter<any> = new EventEmitter();
 
   @HostListener('document:keydown.escape', ['$event']) handleKeydown(

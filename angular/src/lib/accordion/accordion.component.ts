@@ -98,7 +98,6 @@ export class AccordionTabComponent implements OnInit, AfterViewInit {
   @Output() handleKeyDown: EventEmitter<any> = new EventEmitter();
 
   index;
-
   focus;
 
   constructor(
@@ -123,7 +122,6 @@ export class AccordionTabComponent implements OnInit, AfterViewInit {
 
   handleContentClick(event: Event) {
     this.contentClick.emit({ originalEvent: event, tab: this.accordion.tabs[this.index] });
-
     event.stopPropagation();
   }
 
@@ -132,7 +130,6 @@ export class AccordionTabComponent implements OnInit, AfterViewInit {
       return false;
     }
     this.index = this.findTabIndex();
-
     this.accordionService.setFocus(this.index);
 
     if (this.isExpanded) {
@@ -199,7 +196,6 @@ export class AccordionTabComponent implements OnInit, AfterViewInit {
       case 'ArrowUp':
       case 'ArrowLeft':
         newIndex = this.getNewIndex(this.index, -1, this.accordion.tabs.length - 1);
-
         this.accordionService.setFocus(newIndex);
 
         if (this.accordion.tabs[this.focus]) {
@@ -212,7 +208,6 @@ export class AccordionTabComponent implements OnInit, AfterViewInit {
       case 'ArrowRight':
       case 'ArrowDown':
         newIndex = this.getNewIndex(this.index, 1, this.accordion.tabs.length - 1);
-
         this.accordionService.setFocus(newIndex);
 
         if (this.accordion.tabs[this.focus]) {

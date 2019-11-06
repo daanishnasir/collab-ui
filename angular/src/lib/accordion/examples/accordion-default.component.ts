@@ -33,7 +33,7 @@ export class AccordionDefaultComponent {
   constructor() { }
 
   fireThis(event) {
-    alert('content clicked');
+    console.info(event);
   }
 
   fireKeyDown(event) {

@@ -75,7 +75,7 @@ export class ButtonComponent implements AfterViewInit {
     }
     this._removeStyle = value;
   }
-  /** @prop Size value | '36' */
+  /** @prop Sets the size value of the button | '36' */
   @Input()
   get size(): number | string {
     if (this.removeStyle) {

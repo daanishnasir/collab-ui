@@ -44,15 +44,15 @@ export class ListComponent implements OnInit, AfterContentInit {
     });
   }
 
-  /** @option Optional ID value of List | null */
+  /** @prop Optional ID value of List | null */
   @HostBinding('id') @Input() id: string = uniqueId('md-list-');
-  /** @option itemRole prop to set child roles | 'listItem' */
+  /** @prop itemRole prop to set child roles | 'listItem' */
   @Input() itemRole = 'listItem';
-  /** @option Callback function invoked by user selecting an interactive item within list | null */
+  /** @prop Callback function invoked by user selecting an interactive item within list | null */
   @Output() select = new EventEmitter();
-  /** @option Sets the ARIA role for the Nav, in the context of a TabContainer | 'list' */
+  /** @prop Sets the ARIA role for the Nav, in the context of a TabContainer | 'list' */
   @HostBinding('attr.role') @Input() role: string = 'list';
-  /** @option Sets the orientation of the List | 'vertical' */
+  /** @prop Sets the orientation of the List | 'vertical' */
   private _tabType: string = 'vertical';
   @Input()
   set tabType(tabType: string) {
@@ -62,9 +62,9 @@ export class ListComponent implements OnInit, AfterContentInit {
     this.el.nativeElement.classList.add(`md-list--${tabType}`);
     this._tabType = tabType;
   }
-  /** @option Type sets List size | null */
+  /** @prop Type sets List size | null */
   @Input() type = null;
-  /** @option Wrap prop type to wrap items to next row */
+  /** @prop Wrap prop type to wrap items to next row */
   @Input() wrap = false;
 
   @ContentChildren(ListItemComponent) listItems: QueryList<ListItemComponent>;

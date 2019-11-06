@@ -67,7 +67,7 @@ const cb = () => {};
 })
 export class EditableTextfieldComponent implements ControlValueAccessor {
   private _alignment: string = null;
-  /** @option Sets optional button alignment | null */
+  /** @prop Sets optional button alignment | null */
   @Input()
   set alignment(alignment: string) {
     if (this._alignment) {
@@ -80,30 +80,30 @@ export class EditableTextfieldComponent implements ControlValueAccessor {
     );
     this._alignment = alignment;
   }
-  /** @option Optional css class name for non-edit text div | null */
+  /** @prop Optional css class name for non-edit text div | null */
   @Input() buttonClass: string = '';
-  /** @option Optional css class string on div wrapping input | ''  */
+  /** @prop Optional css class string on div wrapping input | ''  */
   @Input() public className: string = '';
-  /** @option Sets the disabled attribute of the Input | false */
+  /** @prop Sets the disabled attribute of the Input | false */
   @Input() public disabled: boolean = false;
-  /** @option Unique HTML ID used for tying label to HTML input for automated testing */
+  /** @prop Unique HTML ID used for tying label to HTML input for automated testing | '' */
   @Input() public htmlId: string = '';
-  /** @option Input css class name string */
+  /** @prop Optional css class on input | '' */
   @Input() public inputClass: string = '';
-  /** @option Overall input group size | '' */
+  /** @prop Overall input group size | '' */
   @Input() public containerSize: string = '';
-  /** @option Input size | '' */
+  /** @prop Sets the input size | '' */
   @Input() public inputSize: string = '';
-  /** @option Placeholder text to display when Input is empty | '' */
+  /** @prop Placeholder text to display when Input is empty | '' */
   @Input() public placeholder: string = '';
-  /** @option Determines if Input can be edited | false */
+  /** @prop Determines if Input can be edited | false */
   @Input() public readOnly: boolean = false;
-  /** @option Input type | 'text' */
+  /** @prop Input type | 'text' */
   @Input() public type: string = 'text';
-  /** @option Sets the attribute name to the input element | '' */
+  /** @prop Sets the attribute name to the input element | '' */
   @Input() public name: string = '';
 
-  /** @option Optional function after done editing */
+  /** @prop Optional function after done editing */
   @Output() handleDoneEditing: EventEmitter<any> = new EventEmitter();
 
   @ViewChild('inputRef') inputRef: ElementRef;

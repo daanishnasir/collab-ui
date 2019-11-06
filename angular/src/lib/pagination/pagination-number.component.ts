@@ -19,9 +19,9 @@ import { PaginationService } from './pagination.service';
   }
 })
 export class PaginationNumberComponent implements OnInit {
-  /** @option set index | '' */
+  /** @prop set index | '' */
   @Input() index: number;
-  /** @option set ifPreventDefault | '' */
+  /** @prop set ifPreventDefault | '' */
   @Input() ifPreventDefault: boolean = false;
 
   public myHref: any;

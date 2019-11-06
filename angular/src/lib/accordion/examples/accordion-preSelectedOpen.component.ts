@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
       <md-accordion-tab
         header="Test Header 2"
         [isExpanded]="true"
-        (onClick) = "fireThis($event)"
+        (contentClick) = "fireThis($event)"
       >
         Content 2
       </md-accordion-tab>
@@ -35,6 +35,6 @@ export class AccordionPreSelectedOpenComponent {
   constructor() { }
 
   fireThis(event) {
-    alert('content clicked');
+    console.info(event);
   }
 }
