@@ -80,13 +80,13 @@ export class DateRangePickerComponent implements OnInit {
   @Input() public shouldCloseOnSelect: boolean = true;
   /** @prop To enable/disable clicking on underlay to exit modal | false */
   @Input() public backdropClickExit: boolean = false;
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originX: HorizontalConnectionPos = 'end';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originY: VerticalConnectionPos = 'top';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayX: HorizontalConnectionPos = 'start';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayY: VerticalConnectionPos = 'bottom';
   /** @prop To the format of the date | 'MMMM Do' */
   @Input() public dateFormat: string = 'MMMM Do';

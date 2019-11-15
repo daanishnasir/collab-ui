@@ -54,5 +54,4 @@ export class DatePickerMonthComponent implements OnInit {
     } while (this.datePickerService.isSameMonth(day, currentWeekStart));
     this.weeks = _weeks;
   }
-
 }

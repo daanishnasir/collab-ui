@@ -73,7 +73,7 @@ export class SideBarComponent implements OnInit, OnDestroy {
   @Input() autoToggle = false;
   /** @prop optional auto toggle width to automatically trigger toggle behavior | 960 */
   @Input() autoToggleWidth = 960;
-  /** @prop optional CSS class for the toggle button */
+  /** @prop optional CSS class for the toggle button | ''*/
   @Input() buttonClass = '';
 
   @Output() toggle = new EventEmitter<{ expanded: boolean; }>();

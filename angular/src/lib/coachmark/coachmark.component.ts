@@ -70,13 +70,13 @@ export class CoachmarkComponent implements AfterContentInit, AfterViewInit {
   @Input() height?: number | string;
   /** @prop Shows visibility of the delay value | 0 */
   @Input() showDelay: number;
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originX: HorizontalConnectionPos = 'start';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originY: VerticalConnectionPos = 'bottom';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayX: HorizontalConnectionPos = 'start';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayY: VerticalConnectionPos = 'top';
   /** @prop Optional set the positon of the arrow | '' */
   @Input() public arrowPosition: ArrowPositionType;
@@ -345,11 +345,11 @@ export class CoachmarkComponent implements AfterContentInit, AfterViewInit {
   }
 
   show = () => {
-    this.coachmarkService.setVisiable(true);
+    this.coachmarkService.setVisible(true);
   }
 
   dismiss = () => {
-    this.coachmarkService.setVisiable(false);
+    this.coachmarkService.setVisible(false);
   }
 
   delayedShow = () => {

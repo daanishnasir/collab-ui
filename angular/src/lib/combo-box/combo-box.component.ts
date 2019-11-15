@@ -120,7 +120,7 @@ export class ComboBoxComponent implements OnInit, OnDestroy, ControlValueAccesso
   @Input() disabled: boolean = false;
   /** @prop Sets the ComboBox to have a search icon | true */
   @Input() hasSearchIcon: boolean = true;
-  /** @prop Sets the ID of the ComboBox */
+  /** @prop Sets the ID of the ComboBox | null */
   @Input() id: string;
   /** @prop Array of options for the ComboBox dropdown | [] */
   @Input() options: Array<Object | string> = [];

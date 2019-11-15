@@ -64,13 +64,13 @@ export class DatePickerComponent implements OnInit {
   /** @prop To enable/disable clicking on underlay to exit modal | false */
   @Input() public backdropClickExit: boolean = false;
 
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originX: HorizontalConnectionPos = 'end';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originY: VerticalConnectionPos = 'top';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayX: HorizontalConnectionPos = 'start';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayY: VerticalConnectionPos = 'bottom';
 
   /** @prop Handler invoked when user makes a change within the DatePicker | null */

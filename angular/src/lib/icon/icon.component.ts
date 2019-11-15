@@ -37,10 +37,15 @@ export class IconComponent implements OnInit {
   @Input() public color: string;
   @Input() public className: string;
   @Input() public description: string;
+  /** @prop Sets the type of icon to show | null */
   @Input() public name: string;
+  /** @prop Sets the size of the icon | null */
   @Input() public size: number;
+  /** @prop Sets the font size of the icon | null */
   @Input() public fontSize: number;
+  /** Needed to set the aria label of the icon | null */
   @Input() public title: string;
+
   @Input() public type: string;
 
   @Output() click: EventEmitter<any> = new EventEmitter();

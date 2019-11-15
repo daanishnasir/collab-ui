@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'example-editable-textfield-default',
@@ -18,5 +18,4 @@ export class EditableTextfieldDefaultComponent {
   finishEdit(e) {
     console.info('Finish Editing: ', e);
   }
-  constructor() {}
 }

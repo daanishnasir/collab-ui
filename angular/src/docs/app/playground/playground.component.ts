@@ -9,7 +9,9 @@ import { Component } from '@angular/core';
         <div class="docs-container">
           <!-- Insert Example Here -->
 
-    <example-composite-avatar-default></example-composite-avatar-default>
+
+
+    <example-drawer-default></example-drawer-default>
 
 
         </div>

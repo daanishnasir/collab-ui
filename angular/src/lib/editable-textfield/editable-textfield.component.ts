@@ -80,9 +80,9 @@ export class EditableTextfieldComponent implements ControlValueAccessor {
     );
     this._alignment = alignment;
   }
-  /** @prop Optional css class name for non-edit text div | null */
+  /** @prop Optional css class name for non-edit text div | '' */
   @Input() buttonClass: string = '';
-  /** @prop Optional css class string on div wrapping input | ''  */
+  /** @prop Optional css class string on div wrapping input | '' */
   @Input() public className: string = '';
   /** @prop Sets the disabled attribute of the Input | false */
   @Input() public disabled: boolean = false;

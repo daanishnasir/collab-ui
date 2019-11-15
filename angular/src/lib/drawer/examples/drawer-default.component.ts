@@ -28,5 +28,4 @@ export class DrawerDefaultComponent {
   changeDrawer(isOpen: Boolean) {
     this.showMe = isOpen;
   }
-
 }

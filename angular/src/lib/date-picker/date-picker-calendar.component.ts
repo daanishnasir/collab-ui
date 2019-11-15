@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DatePickerService } from './date-picker.service';
 
 @Component({
@@ -34,7 +34,7 @@ import { DatePickerService } from './date-picker.service';
     class: 'md-datepicker__month-container'
   }
 })
-export class DatePickerCalendarComponent implements OnInit {
+export class DatePickerCalendarComponent {
 
   public monthName: string;
   public allPrevDaysDisabled: boolean;
@@ -56,10 +56,6 @@ export class DatePickerCalendarComponent implements OnInit {
       this.allNextDaysDisabled = s.shouldNextMonthDisable(date);
       this.allPrevDaysDisabled = s.shouldPrevMonthDisable(date);
     });
-  }
-
-  ngOnInit() {
-
   }
 
   public getWeekDayName = offset => {

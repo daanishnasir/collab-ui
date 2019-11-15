@@ -41,9 +41,9 @@ import { DatePickerService } from '../date-picker/date-picker.service';
   }
 })
 export class DateRangeInputComponent implements OnInit {
-  /** @prop the value of the label */
+  /** @prop the value of the label | '' */
   @Input() public labelValue: string = '';
-  /** @prop the select date */
+  /** @prop the select date | null */
   @Input() public selectDate?: any;
   /** @prop the value of the placeholder */
   @Input() public placeholder: string = '';

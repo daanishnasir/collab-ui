@@ -11,7 +11,7 @@ export class CoachmarkService {
 
   constructor() { }
 
-  public setVisiable = (ifShow) => {
+  public setVisible = (ifShow) => {
     this.showed.next(ifShow);
   }
 

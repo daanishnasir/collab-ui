@@ -62,7 +62,7 @@ export class CheckboxComponent implements ControlValueAccessor {
   @Input() className: string = '';
   /** @prop String value that corresponds with Checkbox  | '' */
   @Input() value: any = '';
-  /** @prop index of the checkbox in tab order */
+  /** @prop index of the checkbox in tab order | 0 */
   @Input() tabIndex: number = 0;
   /** @prop angular form control */
   @Input() formControl: FormControl;

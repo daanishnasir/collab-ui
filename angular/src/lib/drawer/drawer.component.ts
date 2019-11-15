@@ -21,7 +21,7 @@ export class DrawerComponent {
 
   private _visible: Boolean = false;
 
-  /** @prop css class names | ''  */
+  /** @prop Sets optional css class string on drawer | ''  */
   @Input() public class: string = '';
 
   @HostBinding('class') get className(): string {
@@ -32,7 +32,7 @@ export class DrawerComponent {
       + `${this.class ? this.class : '' } `;
   }
 
-   /** @prop Set whether the drawer is open or not | 'false' */
+  /** @prop Sets whether the drawer is open or not | 'false' */
   @Input()
   set isOpen (value: Boolean) {
     this._visible = value;
@@ -42,23 +42,20 @@ export class DrawerComponent {
     return this._visible;
   }
 
-   /** @prop Sets the openFrom opens | 'right' */
+  /** @prop Sets the direction openFrom opens | 'right' */
   @Input() openFrom: DrawerOpenFromDirection = 'right';
 
-   /** @prop Sets the openFrom opens defaults | 'medium */
-   @Input() size: DrawerSize = 'medium';
+  /** @prop Sets the size of the drawer | 'medium */
+  @Input() size: DrawerSize = 'medium';
 
-   /** @prop set the text for accessibilty on the close button | 'close' */
-   @Input() closeAriaLabel: String = 'close';
+  /** @prop Sets the text for accessibility on the close button | 'close' */
+  @Input() closeAriaLabel: String = 'close';
 
-  /** use this event to know when the drawer has changed */
+  /** Emitter for when the drawer changes */
   @Output() drawerChanged: EventEmitter<Boolean> = new EventEmitter();
 
   close() {
     this.isOpen = false;
     this.drawerChanged.emit(this.isOpen);
   }
-
-  constructor(el: ElementRef) {}
-
 }

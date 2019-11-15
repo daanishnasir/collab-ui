@@ -12,17 +12,14 @@ import { DatePickerService } from './date-picker.service';
 })
 export class DatePickerWeekComponent implements OnInit {
 
-  /** @prop Required day that the DatePickerDay displays */
+  /** @prop Required day that the DatePickerDay displays | null */
   @Input() public day: any;
+    /** @prop Required month that the DatePickerDay displays | null */
   @Input() public month: any;
 
   public days = [];
 
-  constructor(
-    private datePickerService: DatePickerService
-  ) {
-
-  }
+  constructor( private datePickerService: DatePickerService) {}
 
   ngOnInit() {
     this.days = this.datePickerService.getDaysInWeek(this.day);

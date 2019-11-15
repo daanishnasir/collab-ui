@@ -51,13 +51,13 @@ export class TimePickerComponent implements OnInit {
   @Input() minuteInterval: MinuteIntervalType = 1;
   /** @prop Set the initial selected time | null */
   @Input() selectedTime: any;
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originX: HorizontalConnectionPos = 'start';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public originY: VerticalConnectionPos = 'bottom';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayX: HorizontalConnectionPos = 'start';
-  /** @prop Optional overlay positioin | '' */
+  /** @prop Optional overlay position | '' */
   @Input() public overlayY: VerticalConnectionPos = 'top';
   /** @prop Callback function invoked when user makes a change | null */
   @Output() whenChange = new EventEmitter();

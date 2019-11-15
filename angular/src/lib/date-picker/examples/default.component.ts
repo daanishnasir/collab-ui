@@ -25,10 +25,6 @@ export class ExampleDatePickerDefaultComponent {
   @ViewChild('datepicker') datePickerComponent: DatePickerComponent;
   @ViewChild('dateTitle') dateTitle: ElementRef;
 
-  constructor() {
-
-  }
-
   private isShow = true;
 
   public switchDatePicker() {
